@@ -1,0 +1,205 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\apiTest.config.ts",
+    "rootDir": "C:/Users/alekh.singh/Downloads/Appium_Typescript_Backup/webdriverio-ts-appium-main/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/test-results/test-results.json"
+        }
+      ],
+      [
+        "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\node_modules\\monocart-reporter\\lib\\index.js",
+        {
+          "name": "Bookcart API Test Automation",
+          "outputFile": "results/test-results/monocart_report.html"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/alekh.singh/Downloads/Appium_Typescript_Backup/webdriverio-ts-appium-main/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "api_test",
+        "name": "api_test",
+        "testDir": "C:/Users/alekh.singh/Downloads/Appium_Typescript_Backup/webdriverio-ts-appium-main/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "apiTest.ts"
+        ],
+        "timeout": 900000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.41.1",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "apiTest\\apiTest.ts",
+      "file": "apiTest/apiTest.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC01_validation of get book API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api_test",
+              "projectName": "api_test",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 992,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Response is... {\n  bookId: \u001b[33m2\u001b[39m,\n  title: \u001b[32m'HP2'\u001b[39m,\n  author: \u001b[32m'JKR'\u001b[39m,\n  category: \u001b[32m'Mystery'\u001b[39m,\n  price: \u001b[33m235\u001b[39m,\n  coverFileName: \u001b[32m'9d8f4978-0ef8-42d0-873a-4eb583439237HP2.jpg'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "get user information",
+                      "duration": 714
+                    }
+                  ],
+                  "startTime": "2024-02-02T09:20:42.258Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36439dc2b3c2c23396dd-f3bf9d8c14af2b76b281",
+          "file": "apiTest/apiTest.ts",
+          "line": 7,
+          "column": 12
+        },
+        {
+          "title": "TC02_validation of adding new book record",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 900000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api_test",
+              "projectName": "api_test",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 530,
+                  "error": {
+                    "message": "SyntaxError: Unexpected end of JSON input",
+                    "stack": "SyntaxError: Unexpected end of JSON input\n    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:28:32\n    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:26:9",
+                    "location": {
+                      "file": "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts",
+                      "column": 32,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m bookApi\u001b[33m.\u001b[39mstep(\u001b[32m'create new user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m             \u001b[36mlet\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addNewBookRecordPage\u001b[33m.\u001b[39maddNewBookRecord(request\u001b[33m,\u001b[39m baseURL)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m jsonResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"response is....\"\u001b[39m\u001b[33m,\u001b[39mresponse)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m             \u001b[36mawait\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'Response is...'\u001b[39m\u001b[33m,\u001b[39m jsonResponse)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m             \u001b[36mtry\u001b[39m{\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts",
+                        "column": 32,
+                        "line": 28
+                      },
+                      "message": "SyntaxError: Unexpected end of JSON input\n\n\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m bookApi\u001b[33m.\u001b[39mstep(\u001b[32m'create new user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m             \u001b[36mlet\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addNewBookRecordPage\u001b[33m.\u001b[39maddNewBookRecord(request\u001b[33m,\u001b[39m baseURL)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m jsonResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"response is....\"\u001b[39m\u001b[33m,\u001b[39mresponse)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m             \u001b[36mawait\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'Response is...'\u001b[39m\u001b[33m,\u001b[39m jsonResponse)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m             \u001b[36mtry\u001b[39m{\u001b[0m\n\n\u001b[2m    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:28:32\u001b[22m\n\u001b[2m    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:26:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "response is.... APIResponse: 415 Unsupported Media Type\n  Content-Length: 0\n  Connection: close\n  Date: Fri, 02 Feb 2024 09:20:42 GMT\n  Server: Microsoft-IIS/10.0\n  Set-Cookie: ARRAffinity=f4edef8e8ae33d792aa347f6380e743b9805a4dd08725995c30ae1f829052383;Path=/;HttpOnly;Secure;Domain=bookcart.azurewebsites.net\n  Set-Cookie: ARRAffinitySameSite=f4edef8e8ae33d792aa347f6380e743b9805a4dd08725995c30ae1f829052383;Path=/;HttpOnly;SameSite=None;Secure;Domain=bookcart.azurewebsites.net\n  Strict-Transport-Security: max-age=2592000\n  X-Powered-By: ASP.NET\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "create new user",
+                      "duration": 219,
+                      "error": {
+                        "message": "SyntaxError: Unexpected end of JSON input",
+                        "stack": "SyntaxError: Unexpected end of JSON input\n    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:28:32\n    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:26:9",
+                        "location": {
+                          "file": "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts",
+                          "column": 32,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m bookApi\u001b[33m.\u001b[39mstep(\u001b[32m'create new user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m             \u001b[36mlet\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addNewBookRecordPage\u001b[33m.\u001b[39maddNewBookRecord(request\u001b[33m,\u001b[39m baseURL)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m jsonResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"response is....\"\u001b[39m\u001b[33m,\u001b[39mresponse)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m             \u001b[36mawait\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'Response is...'\u001b[39m\u001b[33m,\u001b[39m jsonResponse)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m             \u001b[36mtry\u001b[39m{\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-02-02T09:20:43.258Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\test-results\\apiTest-apiTest.ts-TC02-validation-of-adding-new-book-record-api-test\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts",
+                    "column": 32,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "36439dc2b3c2c23396dd-402d1b41a580544c363a",
+          "file": "apiTest/apiTest.ts",
+          "line": 24,
+          "column": 12
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-02-02T09:20:38.958Z",
+    "duration": 4983.132,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

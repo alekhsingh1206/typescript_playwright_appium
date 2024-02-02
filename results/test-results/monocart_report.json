@@ -1,0 +1,653 @@
+{
+    "name": "Bookcart API Test Automation",
+    "date": 1706865638923,
+    "dateH": "2/2/2024, 2:50:38 PM",
+    "duration": 6156,
+    "durationH": "6.2s",
+    "cwd": "C:/Users/alekh.singh/Downloads/Appium_Typescript_Backup/webdriverio-ts-appium-main",
+    "outputFile": "results/test-results/monocart_report.html",
+    "outputDir": "results/test-results",
+    "metadata": {
+        "actualWorkers": 1
+    },
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 12,
+            "model": "12th Gen Intel(R) Core(TM) i7-1265U",
+            "speed": 2688
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 34029125632
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.22000",
+        "type": "Windows_NT",
+        "version": "Windows 10 Enterprise",
+        "uptime": 16001.546,
+        "hostname": "DDC4-L-4L0RSQ3",
+        "pid": 23352,
+        "node": "18.16.0",
+        "v8": "10.2.154.26-node.26",
+        "timestampStart": 1706865638923,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 100
+                },
+                "mem": {
+                    "free": 13440655360
+                },
+                "timestamp": 1706865640999
+            },
+            {
+                "cpu": {
+                    "percent": 99.73
+                },
+                "mem": {
+                    "free": 13414031360
+                },
+                "timestamp": 1706865643031
+            },
+            {
+                "cpu": {
+                    "percent": 100
+                },
+                "mem": {
+                    "free": 13465620480
+                },
+                "timestamp": 1706865645064
+            }
+        ],
+        "workers": 5,
+        "jobs": [
+            {
+                "caseId": "f3bf9d8c14af2b76b281",
+                "parallelIndex": 0,
+                "workerIndex": 0,
+                "timestamp": 1706865642262,
+                "duration": 997
+            },
+            {
+                "caseId": "402d1b41a580544c363a",
+                "parallelIndex": 0,
+                "workerIndex": 0,
+                "timestamp": 1706865643275,
+                "duration": 560
+            }
+        ],
+        "cwd": "C:/Users/alekh.singh/Downloads/Appium_Typescript_Backup/webdriverio-ts-appium-main",
+        "configFile": "apiTest.config.ts",
+        "playwright": "1.41.1",
+        "monocart": "1.7.13",
+        "testDir": "tests",
+        "outputFile": "results/test-results/monocart_report.html",
+        "outputDir": "results/test-results",
+        "timestampEnd": 1706865645079
+    },
+    "artifacts": [],
+    "trends": [],
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 350,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "maxWidth": 1981,
+            "detailed": false
+        }
+    ],
+    "rows": [
+        {
+            "id": "omxrwjivs5qygd0odgc9",
+            "title": "api_test",
+            "type": "suite",
+            "suiteType": "project",
+            "caseNum": 2,
+            "subs": [
+                {
+                    "id": "36439dc2b3c2c23396dd",
+                    "title": "apiTest/apiTest.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 2,
+                    "subs": [
+                        {
+                            "id": "f3bf9d8c14af2b76b281",
+                            "title": "TC01_validation of get book API",
+                            "type": "case",
+                            "caseType": "passed",
+                            "ok": true,
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
+                            "location": "tests/apiTest/apiTest.ts:7:12",
+                            "logs": [
+                                "Response is... {\n  bookId: \u001b[33m2\u001b[39m,\n  title: \u001b[32m'HP2'\u001b[39m,\n  author: \u001b[32m'JKR'\u001b[39m,\n  category: \u001b[32m'Mystery'\u001b[39m,\n  price: \u001b[33m235\u001b[39m,\n  coverFileName: \u001b[32m'9d8f4978-0ef8-42d0-873a-4eb583439237HP2.jpg'\u001b[39m\n}\n"
+                            ],
+                            "timestamps": [
+                                1706865642262,
+                                1706865643259
+                            ],
+                            "duration": 997,
+                            "timeout": 900000,
+                            "retry": 0,
+                            "status": "passed",
+                            "stepNum": 15,
+                            "stepFailed": 0,
+                            "stepSubs": true,
+                            "subs": [
+                                {
+                                    "id": "sud3obdbcrqr9itkk45x",
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "stepType": "hook",
+                                    "duration": 165,
+                                    "location": "",
+                                    "subs": [
+                                        {
+                                            "id": "c1s6ml9jh47p8mybf9r9",
+                                            "title": "fixture: request",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 43,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "2hnfjjttc7y1kveqawer",
+                                                    "title": "apiRequest.newContext",
+                                                    "type": "step",
+                                                    "stepType": "pw:api",
+                                                    "duration": 20,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "k4wcfco550sf4wjo59ps",
+                                            "title": "fixture: param",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 4,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        },
+                                        {
+                                            "id": "ukpqf220360q80zt1w3d",
+                                            "title": "fixture: getBookByIdPage",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 2,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "57ufymdb6hd0e0b2f2ov",
+                                    "title": "get user information",
+                                    "type": "step",
+                                    "stepType": "test.step",
+                                    "duration": 714,
+                                    "location": "tests/apiTest/apiTest.ts:9:27",
+                                    "subs": [
+                                        {
+                                            "id": "wr822lwvmtyxlhabocf3",
+                                            "title": "apiRequestContext.get(https://bookcart.azurewebsites.net/api/Book/2)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 673,
+                                            "location": "services/pages/apiPages/bookApi/getBookByIdPage.ts:16:40"
+                                        },
+                                        {
+                                            "id": "c3s6y1a94z1pciom1dpv",
+                                            "title": "apiResponse.json",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 6,
+                                            "location": "tests/apiTest/apiTest.ts:11:51"
+                                        },
+                                        {
+                                            "id": "hkh9vyy0p3nirdqq4pv7",
+                                            "title": "expect.toBe",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 6,
+                                            "location": "tests/apiTest/apiTest.ts:14:55"
+                                        },
+                                        {
+                                            "id": "foaqng7yugriv2vftxk5",
+                                            "title": "expect.toStrictEqual",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 7,
+                                            "location": "tests/apiTest/apiTest.ts:15:44"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "cavobn18lyoksxhq6919",
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "stepType": "hook",
+                                    "duration": 104,
+                                    "location": "",
+                                    "subs": [
+                                        {
+                                            "id": "gdw5idk14mhia0ygtzhy",
+                                            "title": "fixture: getBookByIdPage",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 1,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        },
+                                        {
+                                            "id": "bknycmrot92fjvuu8602",
+                                            "title": "fixture: param",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 23,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        },
+                                        {
+                                            "id": "jneednxhxtib87506424",
+                                            "title": "fixture: request",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 71,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "4hnq7hb4e538yyce5x70",
+                                                    "title": "apiRequestContext.dispose",
+                                                    "type": "step",
+                                                    "stepType": "pw:api",
+                                                    "duration": 44,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "402d1b41a580544c363a",
+                            "title": "TC02_validation of adding new book record",
+                            "type": "case",
+                            "caseType": "failed",
+                            "ok": false,
+                            "outcome": "unexpected",
+                            "expectedStatus": "passed",
+                            "location": "tests/apiTest/apiTest.ts:24:12",
+                            "logs": [
+                                "response is.... APIResponse: 415 Unsupported Media Type\n  Content-Length: 0\n  Connection: close\n  Date: Fri, 02 Feb 2024 09:20:42 GMT\n  Server: Microsoft-IIS/10.0\n  Set-Cookie: ARRAffinity=f4edef8e8ae33d792aa347f6380e743b9805a4dd08725995c30ae1f829052383;Path=/;HttpOnly;Secure;Domain=bookcart.azurewebsites.net\n  Set-Cookie: ARRAffinitySameSite=f4edef8e8ae33d792aa347f6380e743b9805a4dd08725995c30ae1f829052383;Path=/;HttpOnly;SameSite=None;Secure;Domain=bookcart.azurewebsites.net\n  Strict-Transport-Security: max-age=2592000\n  X-Powered-By: ASP.NET\n"
+                            ],
+                            "timestamps": [
+                                1706865643275,
+                                1706865643835
+                            ],
+                            "duration": 560,
+                            "timeout": 900000,
+                            "retry": 0,
+                            "status": "failed",
+                            "stepNum": 14,
+                            "stepFailed": 1,
+                            "stepSubs": true,
+                            "subs": [
+                                {
+                                    "id": "3zrqufrz0fh670fkglsh",
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "stepType": "hook",
+                                    "duration": 111,
+                                    "location": "",
+                                    "subs": [
+                                        {
+                                            "id": "t92beff6jtak6xpnyam2",
+                                            "title": "fixture: request",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 36,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "quq5fnc75uwkorklledr",
+                                                    "title": "apiRequest.newContext",
+                                                    "type": "step",
+                                                    "stepType": "pw:api",
+                                                    "duration": 21,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "fbkqbns49cr8vazgefbz",
+                                            "title": "fixture: param",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 2,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        },
+                                        {
+                                            "id": "axojowy5qzzgsgyyzdql",
+                                            "title": "fixture: addNewBookRecordPage",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 2,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "4bsarbrz9cv4hpch7vwx",
+                                    "title": "create new user",
+                                    "type": "step",
+                                    "stepType": "test.step",
+                                    "duration": 219,
+                                    "location": "tests/apiTest/apiTest.ts:26:23",
+                                    "errors": [
+                                        "SyntaxError: Unexpected end of JSON input\n\n\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m bookApi\u001b[33m.\u001b[39mstep(\u001b[32m'create new user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m             \u001b[36mlet\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addNewBookRecordPage\u001b[33m.\u001b[39maddNewBookRecord(request\u001b[33m,\u001b[39m baseURL)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m jsonResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\n    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:28:32\n    at C:\\Users\\alekh.singh\\Downloads\\Appium_Typescript_Backup\\webdriverio-ts-appium-main\\tests\\apiTest\\apiTest.ts:26:9"
+                                    ],
+                                    "subs": [
+                                        {
+                                            "id": "shfvsz2jnjbe9eruan9m",
+                                            "title": "apiRequestContext.post(https://bookcart.azurewebsites.net/api/Login)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 204,
+                                            "location": "services/pages/apiPages/bookApi/addNewBookRecordPage.ts:18:40"
+                                        },
+                                        {
+                                            "id": "qhucgzegtijmcpnlr68d",
+                                            "title": "apiResponse.json",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 7,
+                                            "location": "tests/apiTest/apiTest.ts:28:47"
+                                        }
+                                    ],
+                                    "errorNum": 1
+                                },
+                                {
+                                    "id": "ahjtx35v765h4llvdazk",
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "stepType": "hook",
+                                    "duration": 204,
+                                    "location": "",
+                                    "subs": [
+                                        {
+                                            "id": "85arif3tpibhzm07h25h",
+                                            "title": "fixture: addNewBookRecordPage",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 1,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        },
+                                        {
+                                            "id": "uco6n3jwycp6kq9ccpd8",
+                                            "title": "fixture: param",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 1,
+                                            "location": "services/fixtures/apiFixture/bookApi.fixtures.ts:14:26"
+                                        },
+                                        {
+                                            "id": "3ubca2xj15l3nlnz9o2t",
+                                            "title": "fixture: request",
+                                            "type": "step",
+                                            "stepType": "fixture",
+                                            "duration": 94,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "w7b0ta9yxvzd7a78k2dn",
+                                                    "title": "apiRequestContext.dispose",
+                                                    "type": "step",
+                                                    "stepType": "pw:api",
+                                                    "duration": 8,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "9wqvfexctcvr8pd7qkzv",
+                                            "title": "attach \"trace\"",
+                                            "type": "step",
+                                            "stepType": "attach",
+                                            "duration": 6,
+                                            "location": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "attachments": [
+                                {
+                                    "name": "trace",
+                                    "path": "../../test-results/apiTest-apiTest.ts-TC02-validation-of-adding-new-book-record-api-test/trace.zip",
+                                    "contentType": "application/zip",
+                                    "retry": 0
+                                }
+                            ],
+                            "errorNum": 1,
+                            "errorId": "4bsarbrz9cv4hpch7vwx"
+                        }
+                    ],
+                    "location": "tests/apiTest/apiTest.ts:0:0"
+                }
+            ]
+        }
+    ],
+    "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe",
+        "shard"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
+    "traceViewerUrl": "https://trace.playwright.dev/?trace={traceUrl}",
+    "tags": {},
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 2,
+            "nav": true,
+            "id": "tests"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 1,
+            "color": "green",
+            "nav": true,
+            "id": "passed",
+            "percent": "50.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 0,
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
+            "percent": "0.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
+            "percent": "0.0%"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 1,
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
+            "percent": "50.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 29,
+            "id": "steps"
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 1,
+            "id": "suites"
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 1,
+            "id": "projects"
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 1,
+            "id": "files"
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 0,
+            "id": "describes"
+        },
+        "shards": {
+            "name": "Shards",
+            "description": "Suite type is shard (only in shading mode)",
+            "value": 0,
+            "id": "shards"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0,
+            "id": "retries"
+        },
+        "errors": {
+            "name": "Errors",
+            "value": 1,
+            "id": "errors"
+        },
+        "logs": {
+            "name": "Logs",
+            "value": 2,
+            "id": "logs"
+        },
+        "attachments": {
+            "name": "Attachments",
+            "value": 1,
+            "id": "attachments"
+        }
+    },
+    "pieChart": {
+        "ns": "mcr-pie",
+        "width": 360,
+        "height": 150,
+        "margin": 10,
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"10,0\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"M75,75 L75,140 A65,65 0 1 1 75,10 z\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"-10,0\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">50.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">50.0%</text></g></g></svg>"
+    }
+}
