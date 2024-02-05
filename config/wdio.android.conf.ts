@@ -5,7 +5,7 @@ import config from '../config/wdio.shared.local.conf';
 // Specs
 // ============
 config.specs = [
-    '../tests/specs/*.ts',
+    '../tests/specs/android/*.ts',
 ];
 
 // ============
@@ -21,7 +21,7 @@ config.capabilities = [
         'appium:orientation': 'PORTRAIT',
         'appium:automationName': 'UiAutomator2',
         // The path to the app
-        'appium:app': join(process.cwd(), './/apps//android.wdio.native.app.v1.0.8.apk'),
+        'appium:app': join(process.cwd(), './/apps//android.demo_app.apk'),
         // @ts-ignore
         'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
         'appium:noReset': false,

@@ -110,12 +110,12 @@ export const config: WebdriverIO.Config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',
+    reporters: ['spec', 
     ['allure', {
-        outputDir: 'allure-results',
+        outputDir: 'results/test-results/mobile-allure-results',
         disableWebdriverStepsReporting: false,
         disableWebdriverScreenshotsReporting: false,
-    }], ],
+    }] ],
     // Options to be passed to Jasmine.
     mochaOpts: {
         ui: 'bdd',

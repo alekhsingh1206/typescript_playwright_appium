@@ -7,11 +7,7 @@ const apiTestConfig: PlaywrightTestConfig = {
     reporter : 
     [
         ["line"],
-        ['json', {  outputFile: 'results/test-results/test-results.json' }],
-        ['monocart-reporter', {  
-          name: "Bookcart API Test Automation",
-          outputFile: 'results/test-results/monocart_report.html'
-      }] 
+        ['html'],['allure-playwright',{outputFolder: 'results/test-results/api-allure-results'}],
     ],
   use: {
     headless: false,

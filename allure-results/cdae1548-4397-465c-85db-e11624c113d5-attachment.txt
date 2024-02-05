@@ -1,4 +1,0 @@
-{
-  "using": "id",
-  "value": "android:id/button1"
-}
