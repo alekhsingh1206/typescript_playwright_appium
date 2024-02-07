@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Feb 05 19:11:50 IST 2024","Mon Feb 05 19:11:56 IST 2024","6055","","Test to check text on Homepage, check successful login along with swipe operation","","","","verify login into the app is successful",""
-"passed","Mon Feb 05 19:11:48 IST 2024","Mon Feb 05 19:11:50 IST 2024","1959","","Test to check text on Homepage, check successful login along with swipe operation","","","","verify the title on home page",""
-"passed","Mon Feb 05 19:11:56 IST 2024","Mon Feb 05 19:12:01 IST 2024","5149","","Test to check text on Homepage, check successful login along with swipe operation","","","","verify user is able to swipe based on element displayed",""
+"passed","Wed Feb 07 23:11:01 IST 2024","Wed Feb 07 23:11:03 IST 2024","1317","","Test to check text on Homepage, check successful login along with swipe operation","","","","verify the title on home page",""
+"passed","Wed Feb 07 23:11:09 IST 2024","Wed Feb 07 23:11:15 IST 2024","5975","","Test to check text on Homepage, check successful login along with swipe operation","","","","verify user is able to swipe based on element displayed",""
+"passed","Wed Feb 07 23:11:03 IST 2024","Wed Feb 07 23:11:09 IST 2024","6637","","Test to check text on Homepage, check successful login along with swipe operation","","","","verify login into the app is successful",""
