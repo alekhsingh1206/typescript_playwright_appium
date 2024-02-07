@@ -1,17 +1,17 @@
 class LoginPage {
 
-     // Element locator for Email Textbox
-     get inputEmail () {
+    // Element locator for Email Textbox
+    get inputEmail() {
         return $('~input-email');
     }
 
-     // Element locator for Password Textbox
-     get inputPassword () {
+    // Element locator for Password Textbox
+    get inputPassword() {
         return $('~input-password');
     }
 
     // Element locator for Login button
-    get loginBtn () {
+    get loginBtn() {
         return $('//XCUIElementTypeStaticText[@name="LOGIN"]');
     }
 
@@ -29,28 +29,36 @@ class LoginPage {
     get SuccessMessage() {
         return $('//XCUIElementTypeStaticText[@name="You are logged in!"]');
     }
-    
+
+    //Element loctator for clicking out the password field
+    get biometricsTextMessage() {
+        return $('//XCUIElementTypeStaticText[contains(@name, "FingerPrint")]');
+    }
     // Method to perform login operation on the App
-     async login (emailId:string, password:string) {
+    async login(emailId: string, password: string) {
         await this.inputEmail.setValue(emailId);
         await this.inputPassword.setValue(password);
         await this.loginBtn.click();
     }
 
     // Method to get Success Message Title
-   async successMessageTitle():Promise<string> {
-        return  (await (this.AlertTitle)).getText();
+    async successMessageTitle(): Promise<string> {
+        return (await (this.AlertTitle)).getText();
     }
 
     // Method to get Success Message
-    async successMessage():Promise<string> {
+    async successMessage(): Promise<string> {
         return (await (this.SuccessMessage)).getText();
     }
 
     // Method to Close Login mssg Pop up
-    async closePopup () {
+    async closePopup() {
         await this.OKbtn.click();
+    }
 
+    // Method to hide the keyboard
+    async hideKeyboard() {
+        await this.biometricsTextMessage.click();
     }
 }
 
